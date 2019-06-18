@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -61,12 +61,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUv-ku-yeg" userLabel="heart" customClass="FaveButton" customModule="FaveButtonDemo" customModuleProvider="target">
-                                <rect key="frame" x="118.5" y="311.5" width="44" height="44"/>
+                                <rect key="frame" x="128" y="321" width="25" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="ICX-nz-LkC"/>
-                                    <constraint firstAttribute="width" constant="44" id="Xvm-2b-Lnp"/>
+                                    <constraint firstAttribute="height" constant="25" id="ICX-nz-LkC"/>
+                                    <constraint firstAttribute="width" constant="25" id="Xvm-2b-Lnp"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="heart"/>
+                                <state key="normal" title="Button" image="heart2"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="VEs-rY-5i8"/>
                                 </connections>
@@ -147,6 +147,7 @@
     </scenes>
     <resources>
         <image name="heart" width="128" height="128"/>
+        <image name="heart2" width="129" height="114"/>
         <image name="like" width="128" height="128"/>
         <image name="smile" width="128" height="128"/>
         <image name="star" width="128" height="128"/>
