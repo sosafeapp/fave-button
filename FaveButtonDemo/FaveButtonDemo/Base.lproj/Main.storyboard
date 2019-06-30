@@ -32,16 +32,38 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="XnC-Fe-Rt2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0d-Bk-ChU" userLabel="star" customClass="FaveButton" customModule="FaveButtonDemo" customModuleProvider="target">
-                                <rect key="frame" x="25" y="311.5" width="44" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNJ-nB-6uZ">
+                                <rect key="frame" x="36" y="113" width="25" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="322-34-sEt"/>
-                                    <constraint firstAttribute="height" constant="44" id="cTY-e3-P2H"/>
+                                    <constraint firstAttribute="width" constant="25" id="3ZL-qt-flv"/>
+                                    <constraint firstAttribute="height" constant="25" id="nF3-0m-8Cq"/>
+                                </constraints>
+                                <state key="normal" image="heart2"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart2" translatesAutoresizingMaskIntoConstraints="NO" id="i0P-yp-e1i">
+                                <rect key="frame" x="36" y="146" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="fxV-H9-z3O"/>
+                                    <constraint firstAttribute="height" constant="25" id="wCo-BR-Jqv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="full-heart" translatesAutoresizingMaskIntoConstraints="NO" id="QNz-hC-Rkq">
+                                <rect key="frame" x="36" y="175" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="ame-xj-pLq"/>
+                                    <constraint firstAttribute="width" constant="25" id="yV1-g4-ilM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0d-Bk-ChU" userLabel="star" customClass="FaveButton" customModule="FaveButtonDemo" customModuleProvider="target">
+                                <rect key="frame" x="30" y="485" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="322-34-sEt"/>
+                                    <constraint firstAttribute="height" constant="22" id="cTY-e3-P2H"/>
                                 </constraints>
                                 <state key="normal" image="star"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
-                                        <color key="value" red="1" green="0.67450980392156867" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.96176666021347046" green="0.20757532119750977" blue="0.20456510782241821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="dotSecondColor">
                                         <color key="value" red="0.9882352941176471" green="0.40392156862745099" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -61,18 +83,18 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUv-ku-yeg" userLabel="heart" customClass="FaveButton" customModule="FaveButtonDemo" customModuleProvider="target">
-                                <rect key="frame" x="128" y="321" width="25" height="25"/>
+                                <rect key="frame" x="109" y="471" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="ICX-nz-LkC"/>
-                                    <constraint firstAttribute="width" constant="25" id="Xvm-2b-Lnp"/>
+                                    <constraint firstAttribute="height" constant="50" id="ICX-nz-LkC"/>
+                                    <constraint firstAttribute="width" constant="50" id="Xvm-2b-Lnp"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="heart2"/>
+                                <state key="normal" title="Button" image="full-heart"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="VEs-rY-5i8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksy-xc-Hkw" userLabel="smile" customClass="FaveButton" customModule="FaveButtonDemo" customModuleProvider="target">
-                                <rect key="frame" x="212.5" y="311.5" width="44" height="44"/>
+                                <rect key="frame" x="206" y="474" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="dmb-uR-WOY"/>
                                     <constraint firstAttribute="width" constant="44" id="iPo-lc-Q96"/>
@@ -94,7 +116,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULx-Fl-vuX" userLabel="like" customClass="FaveButton" customModule="FaveButtonDemo" customModuleProvider="target">
-                                <rect key="frame" x="306" y="311.5" width="44" height="44"/>
+                                <rect key="frame" x="300" y="474" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="dVO-7j-9HI"/>
                                     <constraint firstAttribute="width" constant="44" id="mcf-ml-h89"/>
@@ -125,15 +147,21 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xnp-Bx-c8g" secondAttribute="bottom" constant="60" id="3kD-VX-Nuj"/>
-                            <constraint firstItem="E0d-Bk-ChU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1:4" id="79R-Js-ei0"/>
-                            <constraint firstItem="ULx-Fl-vuX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="7:4" id="994-ho-Xs9"/>
+                            <constraint firstItem="E0d-Bk-ChU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1:4" constant="-5.875" id="79R-Js-ei0"/>
+                            <constraint firstItem="ULx-Fl-vuX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="7:4" constant="-6.125" id="994-ho-Xs9"/>
                             <constraint firstItem="xnp-Bx-c8g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ag8-c9-oqN"/>
-                            <constraint firstItem="E0d-Bk-ChU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DZZ-oO-kw5"/>
-                            <constraint firstItem="GUv-ku-yeg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F2Y-jb-HQq"/>
-                            <constraint firstItem="Ksy-xc-Hkw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Fli-mi-u7O"/>
-                            <constraint firstItem="Ksy-xc-Hkw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="5:4" id="LLv-KX-mui"/>
-                            <constraint firstItem="GUv-ku-yeg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="3:4" id="X3a-CJ-HQk"/>
-                            <constraint firstItem="ULx-Fl-vuX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oYS-IY-bT0"/>
+                            <constraint firstItem="E0d-Bk-ChU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="162.5" id="DZZ-oO-kw5"/>
+                            <constraint firstItem="GUv-ku-yeg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="162.5" id="F2Y-jb-HQq"/>
+                            <constraint firstItem="Ksy-xc-Hkw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="162.5" id="Fli-mi-u7O"/>
+                            <constraint firstItem="QNz-hC-Rkq" firstAttribute="top" secondItem="i0P-yp-e1i" secondAttribute="bottom" constant="4" id="Kgq-AL-tzL"/>
+                            <constraint firstItem="Ksy-xc-Hkw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="5:4" constant="-6.375" id="LLv-KX-mui"/>
+                            <constraint firstItem="hNJ-nB-6uZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="93" id="SLa-bJ-x5j"/>
+                            <constraint firstItem="GUv-ku-yeg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="3:4" constant="-6.625" id="X3a-CJ-HQk"/>
+                            <constraint firstItem="i0P-yp-e1i" firstAttribute="top" secondItem="hNJ-nB-6uZ" secondAttribute="bottom" constant="8" id="fjO-KO-Qh8"/>
+                            <constraint firstItem="QNz-hC-Rkq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="36" id="hqG-J8-qQR"/>
+                            <constraint firstItem="hNJ-nB-6uZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="hu7-in-ePd"/>
+                            <constraint firstItem="i0P-yp-e1i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="36" id="o8p-L0-ElE"/>
+                            <constraint firstItem="ULx-Fl-vuX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="162.5" id="oYS-IY-bT0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -143,11 +171,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-311.19999999999999" y="-6.746626686656672"/>
         </scene>
     </scenes>
     <resources>
+        <image name="full-heart" width="52" height="47"/>
         <image name="heart" width="128" height="128"/>
-        <image name="heart2" width="129" height="114"/>
+        <image name="heart2" width="52" height="47"/>
         <image name="like" width="128" height="128"/>
         <image name="smile" width="128" height="128"/>
         <image name="star" width="128" height="128"/>

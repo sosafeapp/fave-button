@@ -26,7 +26,7 @@ import UIKit
 
 class FaveIcon: UIView {
 
-  var iconColor: UIColor = .gray
+  var iconColor: UIColor = UIColor(red: 0.42, green: 0.47, blue: 0.57, alpha: 1.00)
   var iconImage: UIImage!
   var iconLayer: CAShapeLayer!
   var iconMask:  CALayer!
@@ -78,8 +78,8 @@ extension FaveIcon{
 
     iconMask = Init(CALayer()){
       $0.contents      = iconImage.cgImage
-      $0.contentsScale = UIScreen.main.scale
       $0.bounds        = maskRegion
+      $0.contentsScale = UIScreen.main.scale
     }
 
     iconLayer = Init(CAShapeLayer()){
@@ -93,8 +93,8 @@ extension FaveIcon{
     if let iconImageFilled = iconImageFill?.cgImage {
       iconMaskFinal = Init(CALayer()){
         $0.contents      = iconImageFilled
-        $0.contentsScale = UIScreen.main.scale
         $0.bounds        = maskRegion
+        $0.contentsScale = UIScreen.main.scale
       }
 
       iconLayerFinal = Init(CAShapeLayer()){

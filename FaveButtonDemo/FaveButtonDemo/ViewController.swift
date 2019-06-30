@@ -34,12 +34,31 @@ class ViewController: UIViewController, FaveButtonDelegate{
     self.loveButton?.setSelected(selected: false, animated: false)
 
 
-    SSLikeButton = FaveButton(frame: CGRect(x:self.view.frame.midX , y: self.view.frame.midY/2, width: 50, height: 50), faveIconNormal: UIImage(named: "heart2")!, faveIconFill: UIImage(named: "full-heart")!)
+    SSLikeButton = FaveButton(
+      frame: CGRect(x: 63,
+                    y: 143,
+                    width: 25 * 1.3,
+                    height: 23 * 1.3),
+      faveIconNormal: UIImage(named: "heart2")!, faveIconFill: UIImage(named: "full-heart")!
+    )
+
     self.view.addSubview(SSLikeButton!)
 
     SSLikeButton?.delegate = self
 
     SSLikeButton?.circleToColor = color(0xFF3533)
+  }
+
+  func createRingLayer(_ radius: CGFloat, lineWidth: CGFloat, fillColor: UIColor, strokeColor: UIColor) -> CAShapeLayer{
+
+    let circle = UIBezierPath(arcCenter: CGPoint(x: 26.0, y: 26.0), radius: radius - lineWidth/2, startAngle: 0, endAngle: 2*(.pi), clockwise: true)
+
+    let ringShapeLayer = CAShapeLayer()
+    ringShapeLayer.path = circle.cgPath
+    ringShapeLayer.fillColor = fillColor.cgColor
+    ringShapeLayer.lineWidth = lineWidth
+    ringShapeLayer.strokeColor = strokeColor.cgColor
+    return ringShapeLayer
   }
 
   let colors = [
@@ -51,12 +70,13 @@ class ViewController: UIViewController, FaveButtonDelegate{
   ]
 
   let SSColors = [
-  DotColors(first: color(0xFF3533), second: color(0xFF4749)),
-  DotColors(first: color(0xFF3533), second: color(0xFF4749)),
-  DotColors(first: color(0xFF3533), second: color(0xFF4749)),
-  DotColors(first: color(0xFF3533), second: color(0xFF4749)),
-  DotColors(first: color(0xFF3533), second: color(0xFF4749))
+    DotColors(first: color(0xFF3533), second: color(0xFF4749)),
+    DotColors(first: color(0xFF3533), second: color(0xFF4749)),
+    DotColors(first: color(0xFF3533), second: color(0xFF4749)),
+    DotColors(first: color(0xFF3533), second: color(0xFF4749)),
+    DotColors(first: color(0xFF3533), second: color(0xFF4749))
   ]
+
   func faveButton(_ faveButton: FaveButton, didSelected selected: Bool) {
   }
 
@@ -70,7 +90,3 @@ class ViewController: UIViewController, FaveButtonDelegate{
     return nil
   }
 }
-
-
-
-

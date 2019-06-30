@@ -55,8 +55,8 @@ open class FaveButton: UIButton {
     static let dotRadiusFactors     = (first: 0.0633, second: 0.04)
   }
 
-  @IBInspectable open var normalColor: UIColor     = UIColor(red: 137/255, green: 156/255, blue: 167/255, alpha: 1)
-  @IBInspectable open var selectedColor: UIColor   = UIColor(red: 226/255, green: 38/255,  blue: 77/255,  alpha: 1)
+  @IBInspectable open var normalColor: UIColor     = UIColor(red: 0.42, green: 0.47, blue: 0.57, alpha: 1.00)
+  @IBInspectable open var selectedColor: UIColor   = UIColor(red: 1.00, green: 0.00, blue: 0.12, alpha: 1.00)
   @IBInspectable open var dotFirstColor: UIColor   = UIColor(red: 152/255, green: 219/255, blue: 236/255, alpha: 1)
   @IBInspectable open var dotSecondColor: UIColor  = UIColor(red: 247/255, green: 188/255, blue: 48/255,  alpha: 1)
   @IBInspectable open var circleFromColor: UIColor = UIColor(red: 221/255, green: 70/255,  blue: 136/255, alpha: 1)
@@ -178,7 +178,7 @@ extension FaveButton{
 
 // MARK: utils
 
-extension FaveButton{
+extension FaveButton {
   fileprivate func dotColors(at index: Int) -> DotColors{
     if case let delegate as FaveButtonDelegate = delegate , nil != delegate.faveButtonDotColors(self){
       let colors     = delegate.faveButtonDotColors(self)!
@@ -231,7 +231,7 @@ extension FaveButton {
       let igniteFromRadius = radius*0.8
       let igniteToRadius   = radius*1.1
 
-      let ring  = Ring.createRing(self, radius: 0.01, lineWidth: 3, fillColor: self.circleFromColor)
+      let ring  = Ring.createRing(self, radius: radius*0.2, lineWidth: 3, fillColor: self.circleFromColor)
       let sparks = createSparks(igniteFromRadius)
 
       ring.animateToRadius(radius, toColor: circleToColor, duration: Const.expandDuration, delay: 0)
